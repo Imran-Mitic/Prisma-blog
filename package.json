@@ -2,6 +2,9 @@
   "name": "blog-platform",
   "version": "0.1.0",
   "private": true,
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -24,12 +27,13 @@
     "@tailwindcss/postcss": "^4.0.17",
     "@types/bcrypt": "^5.0.2",
     "@types/jsonwebtoken": "^9.0.9",
-    "@types/node": "^20.17.27",
+    "@types/node": "^20.17.30",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.17",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   }
 }
